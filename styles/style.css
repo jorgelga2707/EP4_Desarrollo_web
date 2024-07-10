@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    word-spacing: 0.25em;
+    background: linear-gradient(90deg, hsl(216, 21%, 24%) 0%, hsl(220, 33%, 2%) 100%);
+}
+
+/*****Encabezado*******/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.linker{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.logo-1{
+    font-size: 30px;
+    color: #1BA9F5;
+    font-weight: bolder;
+}
+
+.logo-2{
+    font-size: 30px;
+    color: #F505B1;
+    font-weight: bolder;
+}
+.linker:hover {
+   filter: hue-rotate(45deg) grayscale(20%);
+   -webkit-transform: rotate(360deg);transform: rotate(360deg);
+}
+.navigator{
+    width: 60%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.navigator-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.navigator-item{
+    padding: 10px 15px;
+    border: solid;
+    border-color: transparent;
+    margin: 0 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigator-item a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FFF;
+    border: solid;
+    border-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.navigator-item a:hover{
+    color: #00FF00;
+    border-color: #00FF00;
+}
+.section-1{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1{
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+}
+.image-1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1 figure{
+    width:  80%;
+    height: 402px;
+}
+
+.image-1 figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-register{
+    padding: 8px 12px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.linker-register{
+    text-decoration: none;
+}
+
+.btn-register:hover{
+    color: #00ff00;
+    border-color: #00FF00;
+}
+
+.business{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mision p{
+    width: 80%;
+    padding: 8px 0;
+    text-align: justify;
+}
+
+.mision h2{
+    width: 80%;
+    padding: 8px 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.mision figure{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision figure img{
+    width: 80%;
+    height: 95%;
+}
+
+.vision{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision p{
+    width: 80%;
+    padding: 8px 0;
+}
+
+.vision h2{
+    width: 80%;
+    padding: 8px 0;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.vision figure{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision figure img{
+    width: 80%;
+    height: 95%;
+}
+
+/*******Estilos testimonios********/
+.testimony{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimony-title{
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.testimony-title h2{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-box figure{
+    width: 60%;
+}
+
+.card .card-box figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 3px 4px 3px 1px rgba(30, 144, 255,0.6);
+}
+
+.card .card-name{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+/*******Footer*******/
+
+footer{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+footer header{
+    display: flex;
+    justify-content: center;
+}
+
+footer header .navigator{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-item{
+    width: 10%;
+    margin: 8px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item .linker-image{
+    width: 60%;
+}
+
+.social-item img{
+    width: 95%;
+    height: 95%;
+    opacity: 0.6;
+}
+
+.social-item img:hover{
+    opacity: 1;
+}
+
+.end{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+/* section contact */
+
+.contact{
+    width: 83%;
+    height: 580px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact .contact__title--container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.contact .contact__title{
+    text-align: center;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 1.3;
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.contact .contact__form{
+    width: 80%;
+    height: 85%;
+}
+.contact .contact__inputs--1,.contact .contact__inputs--2, .contact .contact__inputs--3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contact .contact__label--1,.contact .contact__label--2,.contact .contact__label--3,.contact .contact__label--4, .contact .contact__label--5, .contact .contact__label--6{
+    width: 49%;
+    height: 14%;
+}
+.contact .name,.contact .telephone,.contact .businessx,.contact .email, .contact .cargo{
+    display: block;
+    width: 100%;
+    border: 2px solid #C4C4C4;
+    padding: 6px 10px;
+    border-radius: 8px;
+    outline: none;
+}
+.contact .name:hover,.contact .telephone:hover,.contact .businessx:hover,.contact .email:hover, .contact .cargo:hover{
+    border: 2px solid #00FF00;
+    border-radius: 8px;
+}
+
+.contact .text-area{
+    padding: 6px;
+    width: 100%;
+    border: 2px #C4C4C4 solid;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    outline: none;
+}
+.contact .text-area:hover{
+    border: 2px #00FF00 solid;
+    border-radius: 8px;
+}
+.contact .contact__btn--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact .contact__btn--submit{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    font-size: 20px;
+    width: 100px;
+    color: #FFF;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contact .contact__btn--submit:hover{
+    transform: scale(1.1);
+    border-color: #00FF00;
+    color: #00FF00;
+}
+
+/*************Estilos Login*************/
+
+.body-login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-login{
+    width: 100%;
+    height: calc(100vh - 289.2px);
+    display: flex;
+}
+
+.login-img-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-img-container img{
+    width: 65%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.login__form--submit{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form--wrapper{
+    width: 80%;
+    height: 80%;
+}
+
+.initial-register{
+    margin: 10px 0 20px 0;
+    text-align: justify;
+}
+
+.initial-register a{
+    text-decoration: none;
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.initial-register a:hover{
+    color: #0000FF;
+}
+
+.login__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label--1, .form__label--2, .form__label--3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estado-1, .user, .password{
+    width: 80%;
+    height: 25px;
+    padding: 5px 8px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.login__btn--container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+.login__btn--submit{
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.login__btn--submit:hover{
+    color: #00FF00;
+    border-color: #00FF00;
+}
+
+.end_login{
+    width: 100%;
+}
+
+.end_login p a{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.end_login p a:hover{
+    color: #0000FF;
+}
+
+/*****************Estilos registro*****************/
+
+.main_register{
+    width: 100%;
+    height: calc(100vh - 289.2px);
+    display: flex;
+    justify-content: center;
+}
+
+.main_register--wrapper{
+    width: 90%;
+    padding: 10px 0;
+}
+
+.main_register--wrapper h1{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.form__register{
+    width: 100%;
+}
+
+.form__register--1{
+    width: 100%;
+    display: flex;
+}
+
+.form__register--rigth{
+    width: 50%;
+    margin: 10px 0;
+}
+
+.form__register--rigth div p{
+    margin: 8px 0;
+}
+
+.form__register--left{
+    width: 50%;
+    margin: 10px 0;
+}
+
+.r_name, .r_email, .r_telephone{
+    width: 80%;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.r_name:hover, .r_email:hover, .r_telephone:hover{
+    border: 2px solid #00FF00;
+}
+
+.text-area__register{
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.text-area__register:hover{
+    border: 2px solid #00FF00;
+}
+
+.register__label--1 p, .register__label--2 p, .register__label--3 p{
+    margin: 10px 0;
+}
+
+.btn_register--container{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.btn_register{
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    margin-left: 170px;
+}
+
+.btn_register:hover{
+    color: #00FF00;
+    border-color: #00FF00;
+}
+
+/*****************Estilos empresa*****************/
+
+.main_empresa{
+    width: 100%;
+    height: calc(100vh - 289.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresa_wrapper{
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+.empresa_left{
+    width: 50%;
+    height: 100%;
+}
+
+.empresa_left--container{
+    width: 100%;
+    height: 100%;
+}
+
+.empresa_left--container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.empresa_right{
+    width: 50%;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.empresa_right h2{
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.empresa_right p{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.empresa_right p a{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.empresa_right p a:hover{
+    color: #0000FF;
+}
+
+
+/*****************Estilos desarrollador*****************/
+
+.main_developer{
+    width: 100%;
+    height: calc(100vh - 289.2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****************Estilos blog*****************/
+
+.main_blog{
+    width: 100%;
+    height: calc(100vh - 289.2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_blog--first{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.blog_first--right{
+    width: 50%;
+}
+
+.blog_first--right h2{
+    margin: 10px 0 10px 20px;
+}
+
+.blog_first--right p{
+    margin: 5px 0 5px 20px;
+}
+
+.blog_first--right ol{
+    padding-left: 50px;
+}
+
+.blog_first--right figure{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.blog_first--right figure img{
+    width: 40%;
+    height: 90%;
+}
+
+.blog_first--left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left-wrapper{
+    width: 90%;
+}
+
+.blog_first--left h2{
+    padding: 10px 0;
+}
+
+.blog_first--left p{
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.blog_first--left p .register_blog{
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.blog_first--left p .register_blog:hover{
+    color: #0000FF;
+}
+
+.main_blog--second{
+    width: 100%;
+    height: 30%;
+}
+
+.main_blog--second h3{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.main_blog--second p{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.main_blog--second ul{
+    margin-left: 50px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.active{
+    background: rgba(0,0,0,0.9);
+}
+
+/*******CAROUSEL******/
+
+.carousel {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}

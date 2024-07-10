@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJuniors Login</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body class="body-login">
+        <header>
+            <span class="logo">
+                <a class="linker" href="./index.html"><span class="logo-1">Dev</span><span class="logo-2">Juniors</span></a>
+            </span>
+            <nav class="navigator">
+                <ul class="navigator-list">
+                    <li class="navigator-item"><a href="./index.html">Inicio</a></li>
+                    <li class="navigator-item"><a href="./login.html">Login</a></li>
+                    <li class="navigator-item"><a href="./empresa.html">Empresa</a></li>
+                    <li class="navigator-item"><a href="./desarrollador.html">Desarrollador</a></li>
+                    <li class="navigator-item"><a href="./blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-login">
+            <figure class="login-img-container">
+                <img src="./image/search-job.avif" alt="imagen referencial a la busqueda de trabajo">
+            </figure>
+            <div class="login__form--submit">
+                <div class="login__form--wrapper">
+                    <p class="initial-register">Elige si eres una empresa o desarrollador!, en caso de no estar registrado <a href="./registro.html">haz click aquí</a> para registrate.</p>
+                    <form class="login__form" action="/">
+                        <label for="festado" class="form__label--1">
+                            <input list="estado" placeholder="empresa / desarrollador" id="festado" name="festado" class="estado-1" autocomplete="on" required>
+                            <datalist id="estado">
+                                <option value="Desarrollador"></option>
+                                <option value="Empresa"></option>
+                            </datalist>
+                        </label>
+                        <label for="fuser" class="form__label--2">
+                            <input type="text" id="fuser" name="fuser"  class="user" placeholder="Usuario" autocomplete="username" required>
+                        </label>
+                        <label for="fpassword" class="form__label--3">
+                            <input type="password" id="fpassword" name="fpassword"  class="password" placeholder="************" autocomplete="new-password" required>
+                        </label>
+                        <div class="login__btn--container">
+                            <button class="login__btn--submit" type="submit">Enviar!</button>
+                        </div>
+                    </form>
+                    <div class="end_login">
+                        <p>Olvidaste tu contraseña <a href="/">haz click aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <header>
+                <nav class="navigator">
+                    <ul class="navigator-list">
+                        <li class="navigator-item"><a href="./index.html">Inicio</a></li>
+                        <li class="navigator-item"><a href="./login.html">Login</a></li>
+                        <li class="navigator-item"><a href="./empresa.html">Empresa</a></li>
+                        <li class="navigator-item"><a href="./desarrollador.html">Desarrollador</a></li>
+                        <li class="navigator-item"><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="social">
+                <div class="social-container">
+                    <figure class="social-item">
+                        <a href="https://web.facebook.com/jorge.garcia.7311352/" class="linker-image" target="_blank">
+                        <img src="./image/cdnlogo.com_facebook.svg" alt="Logo de facebook">
+                        </a>    
+                    </figure>
+                    <figure class="social-item">
+                        <a href="https://www.instagram.com/jlgah2707/" class="linker-image" target="_blank">
+                            <img src="./image/cdnlogo.com_instagram.svg" alt="Logo de Instagram">
+                        </a>
+                    </figure>
+                    <figure class="social-item">
+                        <a href="https://x.com/jlgahc2707" class="linker-image" target="_blank">
+                            <img src="./image/cdnlogo.com_twitter-icon.svg" alt="Logo de Twitter">
+                        </a>
+                    </figure>
+                    <figure class="social-item">
+                        <a href="https://www.linkedin.com/in/jorge-garcia-fssd/" class="linker-image" target="_blank">
+                            <img src="./image/cdnlogo.com_linkedin-icon.svg" alt="Logo de Linkedin">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <div class="end">
+                <span>Desarrollado por &copy;DevJuniors  2024</span>
+            </div>
+        </footer>
+    </body>
+</html>
